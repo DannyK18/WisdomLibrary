@@ -17,8 +17,7 @@ This project is intended for developers learning:
 
 * Fetch books from a REST API
 * Decode JSON into Swift objects
-* Convert DTOs into SwiftData models
-* Save data locally using SwiftData
+ * Save data locally using SwiftData
 * Automatically update the UI with `@Query`
 
 ---
@@ -87,11 +86,6 @@ JSONDecoder
       │
       ▼
 
-BookResponse (DTO)
-
-      │
-      ▼
-
 Book (@Model)
 
       │
@@ -125,9 +119,6 @@ REST API
 JSON
       │
       ▼
-BookResponse (DTO)
-      │
-      ▼
 Book (@Model)
       │
       ▼
@@ -148,7 +139,6 @@ SwiftUI List
 WisdomLibrary
 │
 ├── Book.swift          // SwiftData model
-├── BookResponse.swift  // DTO used for decoding JSON
 ├── BookManager.swift   // Networking layer
 ├── ContentView.swift   // SwiftUI interface
 └── WisdomLibraryApp.swift
@@ -175,19 +165,7 @@ By studying this project, you'll understand how to:
 * Send HTTP GET requests
 * Consume REST APIs
 * Decode JSON using `Codable`
-* Separate network models (DTOs) from database models
 * Store data with SwiftData
 * Display persistent data using `@Query`
 * Build a simple networking architecture for SwiftUI apps
 
----
-
-## 🎯 Future Improvements
-
-* Add loading indicators
-* Improve error handling
-* Support POST, PUT, PATCH, and DELETE requests
-* Implement the MVVM architecture
-* Add unit tests
-* Add pagination
-* Add image loading and caching
